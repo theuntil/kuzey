@@ -1,0 +1,145 @@
+/* =========================
+   ROOT & ENTRY ANIMATION
+========================= */
+
+@keyframes softIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-root {
+  min-height: 100vh;
+  padding: 96px 20px;
+  display: flex;
+  justify-content: center;
+  animation: softIn 0.45s ease-out both;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+
+.contact-container {
+  width: 100%;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+}
+
+/* =========================
+   INFO
+========================= */
+
+.contact-info h1 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 14px;
+  color: #555;
+  max-width: 340px;
+  line-height: 1.6;
+}
+
+.contact-items {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 14px;
+  color: #111;
+}
+
+.contact-items div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* =========================
+   FORM (BLACK PANEL)
+========================= */
+
+.contact-form {
+  background: #0c0c0c;
+  border-radius: 30px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 14px;
+  padding: 14px 16px;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #777;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #3b82f6;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.contact-form button {
+  margin-top: 10px;
+  height: 46px;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.contact-form button:hover {
+  transform: translateY(-1px);
+  opacity: 0.92;
+}
+
+.contact-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}

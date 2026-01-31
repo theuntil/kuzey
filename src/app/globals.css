@@ -1,0 +1,318 @@
+@import "tailwindcss";
+
+/* 1) Fontları public/font üzerinden tanıt */
+@font-face {
+  font-family: "SiteFont";
+  src: url("/font/Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SiteFont";
+  src: url("/font/Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SiteFont";
+  src: url("/font/SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SiteFont";
+  src: url("/font/Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 2) Varsayılan font + temel tipografi */
+@layer base {
+  html {
+    font-family: "SiteFont", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  }
+
+  body {
+    font-weight: 400;
+  }
+
+  /* Başlıklar otomatik bold */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.25s ease-out forwards;
+}
+
+.animate-slide-down {
+  animation: slideDown 0.22s ease-in forwards;
+}
+
+
+
+/* =========================
+   AI OUTLINE BUTTON (ICON)
+========================= */
+
+.ai-outline-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;              /* dikey merkez */
+  gap: 10px;                        /* biraz açtık */
+
+  padding: 12px 16px;
+  border-radius: 9999px;
+
+  background: transparent;
+  color: #111827;
+
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;                   /* 🔑 hizayı toparlar */
+  letter-spacing: 0.2px;
+
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  margin-bottom:20px;
+  cursor: pointer;
+
+  transition:
+    border-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.2s ease;
+}
+
+/* ICON – HİZALAMA + DAHA CANLI NEFES */
+.ai-outline-icon {
+  width: 14px;                      /* 14 → 15 (optik denge) */
+  height: 14px;
+  object-fit: contain;
+
+  display: block;                   /* inline img baseline bug fix */
+  margin-top: -1px;                 /* 🔑 yazıyla hizalama */
+
+  opacity: 0.9;
+
+  animation: ai-icon-soft 2.4s ease-in-out infinite;
+}
+
+/* Hover – sade */
+.ai-outline-btn:hover {
+  border-color: rgba(3, 33, 21, 0.6);
+  transform: translateY(-1px);
+}
+
+/* =========================
+   ANIMATION (İYİLEŞTİRİLDİ)
+========================= */
+
+@keyframes ai-icon-soft {
+  0% {
+    transform: scale(0.96);
+    opacity: 0.75;
+  }
+  50% {
+    transform: scale(1.04);          /* 🔑 çok az büyüme */
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.96);
+    opacity: 0.75;
+  }
+}
+
+
+@keyframes fadeGlow {
+  0% {
+    background: rgba(16, 185, 129, 0.15);
+  }
+  100% {
+    background: transparent;
+  }
+}
+
+@keyframes commentIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+ .no-scrollbar::-webkit-scrollbar {
+          display: none;
+        }
+        .no-scrollbar {
+          scrollbar-width: none;
+        }
+        @keyframes scrollHintStrong {
+          0% {
+            transform: translateX(0);
+            opacity: 0.4;
+          }
+          50% {
+            transform: translateX(14px);
+            opacity: 1;
+          }
+          100% {
+            transform: translateX(0);
+            opacity: 0.4;
+          }
+        }
+        .animate-scroll-hint-strong {
+          animation: scrollHintStrong 1.2s ease-in-out infinite;
+        }
+        @keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInUp 0.4s ease-out both;
+}
+
+@keyframes softIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-soft-in {
+  animation: softIn 0.35s ease-out both;
+}
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -16px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes toast-out {
+  from {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, -12px);
+  }
+}
+
+.animate-toast-in {
+  animation: toast-in 220ms ease-out forwards;
+}
+
+.animate-toast-out {
+  animation: toast-out 180ms ease-in forwards;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.35s ease-out;
+}
+
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.4s ease-out forwards;
+}
+
+
+/* Scrollbar tamamen gizle */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE */
+  scrollbar-width: none; /* Firefox */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+
+/* Gerçek liquid glass */
+.glass-overlay {
+  backdrop-filter: blur(18px) saturate(160%);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.55),
+    rgba(255, 255, 255, 0.35)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+
+@keyframes breathe {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

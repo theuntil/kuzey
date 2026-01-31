@@ -1,0 +1,287 @@
+/* =========================
+   RESET & BASE
+========================= */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --accent: #2563eb;        /* kurumsal vurgu rengi */
+  --accent-soft: #e8efff;
+  --text-main: #111;
+  --text-muted: #555;
+  --border: #e5e7eb;
+  --bg-soft: #f8fafc;
+}
+
+
+/* =========================
+   SOFT ENTRY
+========================= */
+@keyframes softIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.kunye-root {
+  animation: softIn 0.45s ease-out both;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+.kunye-section {
+  min-height: 100vh;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.kunye-container {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  gap: 72px; /* desktop boşluk azaltıldı */
+}
+
+/* =========================
+   PERSON / CONTACT
+========================= */
+.person-top {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.person-avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--border);
+}
+
+.person-name {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.person-role {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.person-socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.person-socials a {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.person-socials a:hover {
+  background: var(--accent);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--text-muted);
+}
+
+/* =========================
+   CARDS (MISSION / VISION)
+========================= */
+.cards-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 28px;
+  transition: all 0.25s ease;
+}
+
+.card:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.card-header svg {
+  color: var(--accent);
+}
+
+.card h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.card p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* =========================
+   FEATURES
+========================= */
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.features h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.feature {
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 26px;
+  transition: all 0.25s ease;
+}
+
+.feature svg {
+  color: var(--accent);
+}
+
+.feature:hover {
+  border-color: var(--accent);
+  background: #f1f5ff;
+  transform: translateY(-4px);
+}
+
+.feature h3 {
+  margin: 14px 0 8px;
+  font-size: 16px;
+}
+
+.feature p {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+/* =========================
+   TIMELINE
+========================= */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.timeline h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.timeline-list {
+  border-left: 2px solid var(--border);
+  padding-left: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -34px;
+  top: 4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.timeline-year {
+  font-size: 12px;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.timeline-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 4px 0;
+}
+
+.timeline-text {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .cards-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kunye-container {
+    gap: 56px;
+  }
+}

@@ -1,0 +1,171 @@
+[
+  {
+    "id": "gizlilik-politikasi",
+    "title": "Gizlilik Politikası",
+    "updatedAt": "2026-01-28",
+    "content": [
+      {
+        "type": "p",
+        "text": "KuzeyBatıHaber.com.tr (“Site”), KuzeyBatı International tarafından işletilmektedir. Siteyi ziyaret eden tüm kullanıcılar işbu Gizlilik Politikası’nı kabul etmiş sayılır."
+      },
+      {
+        "type": "p",
+        "text": "KuzeyBatı Haber, kullanıcı gizliliğine önem vermekle birlikte, yürürlükteki mevzuat kapsamında gerekli ve zorunlu teknik verileri işlemektedir."
+      },
+      {
+        "type": "h3",
+        "text": "Toplanan Veriler"
+      },
+      {
+        "type": "p",
+        "text": "Site kullanımında IP adresi, cihaz bilgileri, tarayıcı türü, işletim sistemi, ziyaret zamanı, görüntülenen sayfalar ve çerez (cookie) verileri otomatik olarak toplanabilir."
+      },
+      {
+        "type": "p",
+        "text": "Bu veriler; site güvenliğinin sağlanması, performans ölçümü, istatistiksel analiz ve yasal yükümlülüklerin yerine getirilmesi amacıyla kullanılır."
+      },
+      {
+        "type": "h3",
+        "text": "Kişisel Verilerin Korunması"
+      },
+      {
+        "type": "p",
+        "text": "Toplanan veriler, 6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) kapsamında işlenir. KuzeyBatı Haber, kullanıcıdan açık rıza gerektiren durumlarda ilgili rızayı almadan veri işlemez."
+      },
+      {
+        "type": "p",
+        "text": "Resmî makamlar tarafından usulüne uygun olarak talep edilmesi hâlinde, kullanıcı bilgileri ilgili mercilerle paylaşılabilir."
+      }
+    ]
+  },
+  {
+    "id": "kullanim-sartlari",
+    "title": "Kullanım Şartları",
+    "updatedAt": "2026-01-28",
+    "content": [
+      {
+        "type": "p",
+        "text": "KuzeyBatıHaber.com.tr’yi ziyaret eden, kullanan veya herhangi bir şekilde etkileşimde bulunan herkes işbu Kullanım Şartları’nı peşinen kabul etmiş sayılır."
+      },
+      {
+        "type": "p",
+        "text": "Site üzerinde yer alan içerikler yalnızca bilgilendirme amaçlıdır. İçeriklerin doğruluğu, güncelliği veya eksiksizliği konusunda herhangi bir garanti verilmez."
+      },
+      {
+        "type": "h3",
+        "text": "Kullanıcı Yükümlülükleri"
+      },
+      {
+        "type": "p",
+        "text": "Kullanıcı, siteyi hukuka aykırı amaçlarla kullanamaz; siteye, yazılıma veya içeriğe zarar verecek herhangi bir faaliyette bulunamaz."
+      },
+      {
+        "type": "p",
+        "text": "Site üzerinde yer alan içeriklerin izinsiz kopyalanması, çoğaltılması, yeniden yayımlanması veya ticari amaçla kullanılması yasaktır."
+      }
+    ]
+  },
+  {
+    "id": "haber-ve-editorial-politika",
+    "title": "Haber ve Editoryal Politika",
+    "updatedAt": "2026-01-28",
+    "content": [
+      {
+        "type": "p",
+        "text": "KuzeyBatı Haber’de yayımlanan haberlerin büyük bölümü, güvenilir ajans kaynaklarından temin edilmektedir. Haberlerin ana kaynağı çoğunlukla İhlas Haber Ajansı (İHA)’dır."
+      },
+      {
+        "type": "p",
+        "text": "Ajanslardan alınan içerikler, yayın politikası gereği yapay zekâ destekli sistemler tarafından taranmakta, dil ve anlatım açısından özgünleştirilmektedir."
+      },
+      {
+        "type": "h3",
+        "text": "Yapay Zekâ Kullanımı"
+      },
+      {
+        "type": "p",
+        "text": "Tüm haber içerikleri; başlık, metin ve özet seviyesinde yapay zekâ sistemleri aracılığıyla analiz edilir, yeniden düzenlenir ve özgünleştirilir."
+      },
+      {
+        "type": "p",
+        "text": "Bu süreç, haberin anlamını değiştirmemeyi amaçlamakla birlikte; otomatik sistemler kullanıldığı için %100 hatasız sonuç garantisi verilmez."
+      }
+    ]
+  },
+  {
+    "id": "cocuk-modu-politikasi",
+    "title": "Çocuk Modu ve İçerik Filtreleme Politikası",
+    "updatedAt": "2026-01-28",
+    "content": [
+      {
+        "type": "p",
+        "text": "KuzeyBatı Haber, kullanıcı deneyimini iyileştirmek amacıyla “Çocuk Modu” adlı isteğe bağlı bir içerik filtreleme sistemi sunmaktadır."
+      },
+      {
+        "type": "p",
+        "text": "Çocuk Modu aktif edildiğinde; küfür, şiddet, cinsellik, yasa dışı faaliyetler ve benzeri hassas içerikler barındırdığı düşünülen haberler otomatik olarak filtrelenir veya gösterilmez."
+      },
+      {
+        "type": "h3",
+        "text": "Sistemin Sınırları"
+      },
+      {
+        "type": "p",
+        "text": "Çocuk Modu, yapay zekâ ve anahtar kelime tabanlı otomatik sistemlerle çalışmaktadır. Bu nedenle sistemin %100 doğru sonuç vermesi mümkün değildir."
+      },
+      {
+        "type": "p",
+        "text": "Filtreleme sisteminin hatalı çalışması, bazı içeriklerin yanlışlıkla gizlenmesi veya görünmesi hâlinde KuzeyBatı Haber herhangi bir hukuki, cezai veya idari sorumluluk kabul etmez."
+      }
+    ]
+  },
+  {
+    "id": "sorumlulugun-sinirlandirilmasi",
+    "title": "Sorumluluğun Sınırlandırılması",
+    "updatedAt": "2026-01-28",
+    "content": [
+      {
+        "type": "p",
+        "text": "KuzeyBatı Haber’de yayımlanan içerikler bilgilendirme amaçlıdır. İçeriklerin kullanımı sonucu doğabilecek doğrudan veya dolaylı zararlardan site sorumlu tutulamaz."
+      },
+      {
+        "type": "p",
+        "text": "Teknik arızalar, sistem hataları, yapay zekâ kaynaklı içerik sorunları, veri kaybı veya erişim kesintilerinden dolayı KuzeyBatı Haber’in sorumluluğu bulunmamaktadır."
+      }
+    ]
+  },
+  {
+    "id": "telif-haklari",
+    "title": "Telif Hakları ve İçerik Kullanımı",
+    "updatedAt": "2026-01-28",
+    "content": [
+      {
+        "type": "p",
+        "text": "Sitede yer alan tüm içerikler; metin, görsel, logo ve yazılımlar dahil olmak üzere Fikir ve Sanat Eserleri Kanunu kapsamında korunmaktadır."
+      },
+      {
+        "type": "p",
+        "text": "KuzeyBatı Haber’e ait içeriklerin izinsiz kullanımı, kopyalanması veya dağıtılması hâlinde yasal yollara başvurma hakkı saklıdır."
+      }
+    ]
+  },
+  {
+    "id": "iletisim-ve-yasal-bildirim",
+    "title": "İletişim ve Yasal Bildirimler",
+    "updatedAt": "2026-01-28",
+    "content": [
+      {
+        "type": "p",
+        "text": "İşbu politikalar ile ilgili her türlü soru, görüş ve yasal bildirim için aşağıdaki iletişim kanalları kullanılabilir."
+      },
+      {
+        "type": "p",
+        "text": "E-posta: iletisim@kuzeybatihaber.com.tr | Telefon: +90 533 443 4978"
+      },
+      {
+        "type": "p",
+        "text": "İşletmeci: KuzeyBatı International | İmtiyaz Sahibi: Hakan COŞKUN | Adres: Karabük, Türkiye"
+      }
+    ]
+  }
+]
