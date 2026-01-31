@@ -125,8 +125,14 @@ export default function FeedCard({
   const { show: toast } = useToast();
 
   const blocked = childMode && item.is_child_safe === false;
+  const [time, setTime] = useState("");
+
+useEffect(() => {
   const date = effectiveDate(item);
-  const time = date ? timeAgoTR(date) : "";
+  if (!date) return;
+  setTime(timeAgoTR(date));
+}, [item]);
+
 
   function handleBlocked(e: React.MouseEvent) {
     e.preventDefault();

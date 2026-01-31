@@ -115,7 +115,7 @@ function StoreButton({
       <Image src={img} alt="" width={24} height={24} />
 
       <div className="flex flex-col leading-tight">
-        <span className="text-[10px] opacity-60">{top}</span>
+       
         <span className="text-[15px] font-semibold">{bottom}</span>
       </div>
     </a>

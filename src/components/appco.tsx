@@ -80,7 +80,7 @@ function StoreButton({
   return (
     <a
       href={href}
-      className="flex items-center gap-3 bg-white text-black rounded-xl h-[56px] w-[170px] px-4 shadow-md hover:shadow-xl transition flex-shrink-0"
+      className="flex items-center gap-3 bg-white text-black rounded-xl h-[56px] w-[150px] px-4 shadow-md hover:shadow-xl transition flex-shrink-0"
       style={{ animation: "breathe 6s ease-in-out infinite" }}
     >
       <Image src={img} alt="" width={26} height={26} />
