@@ -6,12 +6,11 @@ import PolicyContent from "./PolicyContent";
 import { useAutoPageView } from "@/lib/analytics/useAutoPageView";
 
 export default function PolicyLayout({ policies }: { policies: any[] }) {
-
+useAutoPageView(); 
   const [activeId, setActiveId] = useState<string>(policies[0].id);
 
   /* HASH + SCROLL FIX */
   useEffect(() => {
- useAutoPageView(); 
     const hash = window.location.hash.replace("#", "");
     if (hash) setActiveId(hash);
 
